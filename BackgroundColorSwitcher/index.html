@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgroud color switcher/toggler effect</title>
+    <link rel="stylesheet" href="switcher.css">
+</head>
+<body>
+    <nav>
+        <strong>Navbar brand</strong>
+        <div class="nav-links">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+        </div>
+        <div>
+            <input type="checkbox" class="checkbox" id="themeToggle">
+            <label for="themeToggle" class="label">
+                <span class="ball"></span>
+            </label>
+        </div>
+    </nav>
+    <main class="container">
+        <h1>Background Color Toggler / Switcher</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, atque reiciendis! Natus laborum quis odit, rem a nobis accusantium quaerat unde beatae, at voluptatibus tenetur labore deleniti, aut consequuntur obcaecati?</p>
+        <button>Get s tarted now</button>
+    </main>
+
+    <script>
+
+        const theme = document.getElementById('themeToggle');
+        theme.addEventListener('change', () => {
+          document.body.classList.toggle('dark')
+        })
+    </script>
+</body>
+</html>
